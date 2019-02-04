@@ -26,6 +26,4 @@ def karatsuba(x,y):
     bd = karatsuba(b,d)
     abcd = karatsuba((a+b),(c+d))
 
-    sub = abcd - ac - bd
-
     return (ac * 10**(2*half_base)) + ((abcd - ac - bd) * 10**(half_base)) + (bd)
